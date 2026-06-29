@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<input type ="text" id="calcu" disabled><br>
+<button onclick="chirwa()">AC</button><br>
+<button onclick="steven('9')">9</button>
+<button onclick="steven('8')">8</button>
+<button onclick="steven('7')">7</button>
+<button onclick="steven('/')">/</button><br>
+<button onclick="steven('6')">6</button>
+<button onclick="steven('5')">5</button>
+<button onclick="steven('4')">4</button>
+<button onclick="steven('*')">*</button><br>
+<button onclick="steven('3')">3</button>
+<button onclick="steven('2')">2</button>
+<button onclick="steven('1')">1</button>
+<button onclick="steven('-')">-</button><br>
+<button onclick="steven('0')">0</button>
+<button onclick="steven('.')">.</button>
+<button onclick="duncan('')">=</button>
+<button onclick="steven('+')">+</button><br>
+<script>
+function steven(num)
+{
+const steven = document.getElementById('calcu');
+steven.value += num;
+}
+function chirwa(){
+const variabo = document.getElementById('calcu');
+
+variabo.value ='';
+}
+function duncan()
+{
+const variabo = document.getElementById('calcu');
+variabo.value = eval(variabo.value);
+}
+</script>
+</body>
+</html>
